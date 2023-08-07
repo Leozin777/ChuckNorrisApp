@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="ChuckNorrisApp.View.MainPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+
+    <ScrollView>
+        <StackLayout
+            Padding="30,0"
+            Spacing="25"
+            VerticalOptions="Center">
+
+            <Image
+                HeightRequest="200"
+                HorizontalOptions="Center"
+                SemanticProperties.Description="Cute dot net bot waving hi to you!"
+                Source="chucknorrislogo.png" />
+
+            <Frame
+                Margin="20"
+                Padding="25"
+                HasShadow="True">
+                <StackLayout>
+                    <Label
+                        FontSize="18"
+                        HorizontalOptions="Center"
+                        SemanticProperties.HeadingLevel="Level2"
+                        Text="{Binding c_JokeString}" />
+
+                    <Button
+                        x:Name="RandomJoke"
+                        Margin="10,20,10,10"
+                        Command="{Binding BuscaPiadaRandomCommand}"
+                        HorizontalOptions="Center"
+                        SemanticProperties.Hint="Counts the number of times you click"
+                        Text="Random joke" />
+                </StackLayout>
+            </Frame>
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>

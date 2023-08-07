@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<Application
+    x:Class="ChuckNorrisApp.App"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:ChuckNorrisApp">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Resources/Styles/Colors.xaml" />
+                <ResourceDictionary Source="Resources/Styles/Styles.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+            <Color x:Key="PageDarkBackgroundColor">#222831</Color>
+            <Color x:Key="PageLightBackgroundColor">#FFFFFF</Color>
+            <Color x:Key="AppShellDarkBackgroundColor">#393E46</Color>
+            <Color x:Key="AppShellLightBackgroundColor">#F9F6F7</Color>
+            <Color x:Key="WordDarkColor">#D65A31</Color>
+            <Color x:Key="WordLightColor">#FFE8D6</Color>
+            <Color x:Key="OtherDarkColor">#EEEEEE</Color>
+            <Color x:Key="OtherLightColor">#FF971D</Color>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
+

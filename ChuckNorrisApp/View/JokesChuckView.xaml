@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="ChuckNorrisApp.View.JokesChuckView"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+    <ScrollView>
+        <StackLayout>
+            <Frame>
+                <StackLayout>
+                    <Entry Text="{Binding c_Search}" />
+                    <Button Command="{Binding BuscaPiadaEntryCommand}" />
+                </StackLayout>
+            </Frame>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

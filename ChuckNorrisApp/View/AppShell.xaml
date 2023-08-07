@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="ChuckNorrisApp.View.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:ChuckNorrisApp.View"
+    Shell.FlyoutBehavior="Disabled">
+
+    <TabBar x:Name="MyTab">
+        <Tab Title="Home" Icon="house.svg">
+            <ShellContent ContentTemplate="{DataTemplate local:MainPage}" />
+        </Tab>
+        <Tab Title="Jokes" Icon="search.svg">
+            <ShellContent ContentTemplate="{DataTemplate local:JokesChuckView}" />
+        </Tab>
+        <Tab Title="About" Icon="infocircle.svg">
+            <ShellContent ContentTemplate="{DataTemplate local:AboutView}" />
+        </Tab>
+    </TabBar>
+</Shell>
